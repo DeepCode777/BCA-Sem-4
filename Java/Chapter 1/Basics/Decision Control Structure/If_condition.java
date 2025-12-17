@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class IfLoop
+public class If_condition
 {
     public static void main(String[] args) {
         Scanner ag = new Scanner(System.in);
