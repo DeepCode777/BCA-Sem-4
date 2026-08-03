@@ -1,0 +1,41 @@
+import javax.swing.*;
+import java.awt.*;
+
+class Demo extends JFrame {
+    public Demo()
+    {
+        this.setLayout(null);
+
+        JRadioButton jRadioButton1 = new JRadioButton();
+        JRadioButton jRadioButton2 = new JRadioButton();
+        JButton jButton = new JButton("Click");
+        ButtonGroup G1 = new ButtonGroup();
+        JLabel L1 = new JLabel("Qualification");
+
+        jRadioButton1.setText("Under-Graduate");
+        jRadioButton2.setText("Graduate");
+
+        jRadioButton1.setBounds(120, 30, 120, 50);
+        jRadioButton2.setBounds(250, 30, 80, 50);
+        jButton.setBounds(125, 90, 80, 30);
+        L1.setBounds(20, 30, 150, 50);
+
+        this.add(jRadioButton1);
+        this.add(jRadioButton2);
+        this.add(jButton);
+        this.add(L1);
+
+        G1.add(jRadioButton1);
+        G1.add(jRadioButton2);
+    }
+}
+
+class RadioButton {
+    public static void main(String args[])
+    {
+        Demo f = new Demo();
+        f.setBounds(400, 100, 400, 200);
+        f.setTitle("RadioButtons");
+        f.setVisible(true);
+    }
+}
